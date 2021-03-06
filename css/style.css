@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer .content-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+}
+
+.layer .content-body {
+    width: 25%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.layer img {
+    position: absolute;
+    width: 25%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom {
+    z-index: 1;
+    background: rgb(32, 32, 32);
+    
+}
+
+.bottom .content-body {
+    right: 5%;
+}
+
+.bottom h1 {
+    color: #c6d8ff;
+}
+
+.top {
+    background: rgb(151, 151, 151);
+    z-index: 2;
+    width: 50vw;
+    color: #222;
+}
+
+.top .content-body {
+    left: 5%;
+    color: #222;
+}
+
+.top h1 {
+    color: #1d3058;
+    z-index: 2;
+}
+
+
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #c6d8ff;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 5;
+}
+
+.handle-hoz {
+    position: absolute;
+    width: 100%;
+    display: block;
+    background-color: #c6d8ff;
+    height: 5px;
+    top: 50%;
+    left: 0;
+    z-index: 5;
+}
